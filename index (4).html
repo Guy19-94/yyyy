@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loto Simulator avec Prédictions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .numbers {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input[type="date"], input[type="text"] {
+            padding: 10px;
+            font-size: 1rem;
+            margin: 10px 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simulateur de Tirage Loto avec Prédictions</h1>
+    <div class="container">
+        <p>Entrez les numéros du dernier tirage pour une prédiction :</p>
+        <div class="form-group">
+            <input type="text" id="lastNumbers" placeholder="Numéros (ex: 1, 2, 3, 4, 5)" />
+            <input type="text" id="lastLuckyNumber" placeholder="Numéro chance" />
+        </div>
+        <button onclick="generatePredictionBasedDraw()">Tirage Prédictif</button>
+        <div class="numbers" id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
